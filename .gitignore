@@ -1,0 +1,24 @@
+# Flutter generated files
+.dart_tool/
+build/
+
+# Android Studio
+.idea/
+
+# VS Code
+.vscode/
+
+# Flutter generated files
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db

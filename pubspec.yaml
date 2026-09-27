@@ -1,0 +1,35 @@
+name: savewise
+description: "SaveWise - Spend Smart. Save Better. Achieve More. An offline-first personal finance and financial literacy app."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  # Flutter 3.22+ (WidgetStateProperty era). Verified against the widget APIs
+  # used in lib/core/theme/app_theme.dart.
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management. Stable, ubiquitous, tiny.
+  provider: ^6.1.2
+
+  # Local-only persistence. Nothing leaves the device.
+  shared_preferences: ^2.2.3
+
+  # Locale-driven currency and date formatting.
+  intl: '>=0.18.0 <2.0.0'
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+# Deliberately no charting package and no google_fonts:
+# every chart is drawn with CustomPainter and every typeface is a
+# platform face, so the app has zero runtime network dependency.
+flutter:
+  uses-material-design: true
